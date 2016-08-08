@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'TrFont';
+  src: url('/fonts/pbio-bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'DigitalFont';
+  src: url('/fonts/digital-display.ttf') format('truetype');
+}
+

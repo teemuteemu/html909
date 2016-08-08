@@ -1,0 +1,12 @@
+<div class="control-panel" ng-click="selectInstrument()">
+  <div class="row">
+    <h3 ng-class="{'selected': isSelectedInstrument()}">{{label}}</h3>
+  </div>
+
+    <div class="row knobs">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 knob-col" ng-repeat="knob in knobs">
+        <knob knob="{{knob}}" type="small"></knob>
+      </div>
+    </div>
+
+</div>

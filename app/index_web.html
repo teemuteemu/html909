@@ -1,0 +1,115 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title>HTML-909</title>
+    <base href="/" />
+
+    <meta name="description" content="Roland TR-909 drum machine made with HTML5 and ❤ ">
+  
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="fragment" content="!">  
+
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="HTML-909">
+    <meta itemprop="description" content="Roland TR-909 drum machine made with HTML5 and <3">
+    <meta itemprop="image" content="http://teemukallio.org/assets/images/portfolio/909.png">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="HTML-909">
+    <meta name="twitter:description" content="Roland TR-909 drum machine made with HTML5 and <3">
+    <meta name="twitter:image:src" content="http://teemukallio.org/assets/images/portfolio/909.png">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="HTML-909" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://html909.com/" />
+    <meta property="og:image" content="http://teemukallio.org/assets/images/portfolio/909.png" />
+    <meta property="og:description" content="Roland TR-909 drum machine made with HTML5 and <3" />
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <link rel="stylesheet" href="styles/bootstrap.css" />
+    <!-- endbuild -->
+
+    <!-- build:css({.tmp,app}) styles/main.css -->
+    <link rel="stylesheet" href="styles/fonts-web.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+     <script>
+       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-34871774-2');
+       ga('send', 'pageview');
+    </script>
+
+  </head>
+  <body ng-app="9095App">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <noscript>
+      <p>You must enable Javascript to view this page.</p>
+    </noscript>
+
+    <!-- Add your site or application content here -->
+    <div class="app container-fluid" ng-view=""></div>
+    <div class="too-small">
+      <div class="too-small-icon">
+        <span class="glyphicon glyphicon-refresh"></span>
+        <span class="glyphicon glyphicon-phone"></span>
+      </div>
+      <p>It might be a good idea to turn your phone around.</p>
+    </div>
+    <div class="too-small really">
+      <p>This is hopeless, your screen is just too small for this shit...<p>
+    </div>
+
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/firebase/firebase.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/directives/control-panel.js"></script>
+        <script src="scripts/directives/knob.js"></script>
+        <script src="scripts/services/setup.js"></script>
+        <script src="scripts/directives/sequencer.js"></script>
+        <script src="scripts/directives/master-volume.js"></script>
+        <script src="scripts/directives/track-select.js"></script>
+        <script src="scripts/directives/tempo.js"></script>
+        <script src="scripts/directives/start-stop.js"></script>
+        <script src="scripts/directives/step.js"></script>
+        <script src="scripts/directives/toolbar.js"></script>
+        <script src="scripts/directives/notifications.js"></script>
+        <script src="scripts/services/sequencer.js"></script>
+        <script src="scripts/services/utils.js"></script>
+        <script src="scripts/services/preset-storage.js"></script>
+        <script src="scripts/services/keyboard.js"></script>
+        <script src="scripts/services/notifications.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
