@@ -1,12 +1,6 @@
 // Generated on 2014-04-18 using generator-angular 0.8.0
 'use strict';
 
-// # Globbing
-// for performance reasons we're only matching one level down:
-// 'test/spec/{,*/}*.js'
-// use this if you want to recursively match all subfolders:
-// 'test/spec/**/*.js'
-
 module.exports = function (grunt) {
 
   // Load grunt tasks automatically
@@ -34,10 +28,6 @@ module.exports = function (grunt) {
       coffee: {
         files: ['<%= yeoman.app %>/scripts/{,*/}*.{coffee,litcoffee,coffee.md}'],
         tasks: ['newer:coffee:dist']
-      },
-      coffeeTest: {
-        files: ['test/spec/{,*/}*.{coffee,litcoffee,coffee.md}'],
-        tasks: ['newer:coffee:test', 'karma']
       },
       styles: {
         files: ['<%= yeoman.app %>/styles/{,*/}*.css'],
@@ -73,16 +63,6 @@ module.exports = function (grunt) {
           open: true,
           base: [
             '.tmp',
-            '<%= yeoman.app %>'
-          ]
-        }
-      },
-      test: {
-        options: {
-          port: 9001,
-          base: [
-            '.tmp',
-            'test',
             '<%= yeoman.app %>'
           ]
         }
@@ -155,15 +135,6 @@ module.exports = function (grunt) {
           cwd: '<%= yeoman.app %>/scripts',
           src: '{,*/}*.coffee',
           dest: '.tmp/scripts',
-          ext: '.js'
-        }]
-      },
-      test: {
-        files: [{
-          expand: true,
-          cwd: 'test/spec',
-          src: '{,*/}*.coffee',
-          dest: '.tmp/spec',
           ext: '.js'
         }]
       }
@@ -332,10 +303,6 @@ module.exports = function (grunt) {
         'coffee:dist',
         'copy:styles'
       ],
-      test: [
-        'coffee',
-        'copy:styles'
-      ],
       dist: [
         'coffee',
         'copy:styles',
@@ -402,16 +369,6 @@ module.exports = function (grunt) {
     grunt.task.run(['serve:' + target]);
   });
 
-  grunt.registerTask('test', [
-    'clean:server',
-    'env:dev',
-    'preprocess:configuration',
-    'concurrent:test',
-    'autoprefixer',
-    'connect:test',
-    'karma'
-  ]);
-
   grunt.registerTask('build', [
     'clean:dist',
     'env:prod',
@@ -432,7 +389,6 @@ module.exports = function (grunt) {
 
   grunt.registerTask('default', [
     'newer:jshint',
-    'test',
     'build'
   ]);
 };
