@@ -2,6 +2,7 @@
 
 angular.module('9095App')
   .factory 'presetStorage', ($location) ->
+      firebaseAppUrl = 'TODO: set this if you want to use firebase for saving/loading'
 
       presets = {
         tempo: 120
@@ -167,17 +168,8 @@ angular.module('9095App')
         }
       }
 
-      firebaseAppUrl = 'https://html909.firebaseio.com/'
-
       getFireBaseRef = (url) ->
         connection = new Firebase(url)
-        ###
-        connection.on('value', () ->
-          debugger
-        )
-        ###
-
-        #connection.onDisconnect().remove()
         return connection
 
       @save = (newPresets, oldID) ->
