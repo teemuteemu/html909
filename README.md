@@ -1,7 +1,5 @@
 # HTML-909
 
-Source code for [http://html909.com](http://html909.com)
-
 ## Getting started
 
 Follow this to get the basic development env running
